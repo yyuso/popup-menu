@@ -2,6 +2,9 @@ body{
     background-color: #cfd6e0;
     overflow-x: hidden;
 }
+.col{
+    background-color: aqua !important;
+}
 .container{
     max-width: 100% !important;
 }
