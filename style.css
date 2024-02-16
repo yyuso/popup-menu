@@ -99,7 +99,7 @@ body{
     transition-duration: 0.5s;
   } 
 .wrapper2.active{
-    right: -555px;
+    right: 555px;
   }
   .link2{
     padding: 10px;
