@@ -70,34 +70,33 @@
 <script>
   function hizlimenu(){
     var div = document.getElementById("wrapper");
-    if (div.style.display === "none") {
-      div.style.display = "block";
-    } else {
-      div.style.display = "none";
-    }
-  }
+    if (div.classList.contains("active")) {
+                div.classList.remove("active");
+            } else {
+                div.classList.add("active");
+            }
+        }
   function hizlimenuu(){
     var div = document.getElementById("wrapper3");
-    if (div.style.display === "none") {
-      div.style.display = "block";
-    } else {
-      div.style.display = "none";
-    }
+    if (div.classList.contains("active")) {
+                div.classList.remove("active");
+            } else {
+                div.classList.add("active");
+            }
   }
  function main() {
     var div = document.getElementById("wrapper2");
-    if (div.style.right == "-555px") {
-        div.style.right = "0px"; 
-        var pass_icon = document.getElementsByClassName("fa-bars")[0];
-        pass_icon.classList.remove("fa-bars");
-        pass_icon.classList.add("fa-circle-xmark");
-        div.style.transition-duration("0.5s");
-
-    } else {
-        div.style.right = "-555px";
-        var pass_icon = document.getElementsByClassName("fa-circle-xmark")[2];
+    if (div.classList.contains("active")) {
+        div.classList.remove("active");
+       var pass_icon = document.getElementsByClassName("fa-circle-xmark")[2];
         pass_icon.classList.remove("fa-circle-xmark");
         pass_icon.classList.add("fa-bars");
+    } else {
+        div.classList.add("active");
+        
+         var pass_icon = document.getElementsByClassName("fa-bars")[0];
+        pass_icon.classList.remove("fa-bars");
+        pass_icon.classList.add("fa-circle-xmark");
     }
   }
 </script>
