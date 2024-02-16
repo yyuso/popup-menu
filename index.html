@@ -86,15 +86,15 @@
   }
  function main() {
     var div = document.getElementById("wrapper2");
-    if (div.style.right == "-555px") {
-        div.style.right = "0px"; 
+    if (div.classList.contains("active") {
+        div.classList.remove("active");
         var pass_icon = document.getElementsByClassName("fa-bars")[0];
         pass_icon.classList.remove("fa-bars");
         pass_icon.classList.add("fa-circle-xmark");
         div.style.transition-duration("0.5s");
 
     } else {
-        div.style.right = "-555px";
+        div.classList.add("active");
         var pass_icon = document.getElementsByClassName("fa-circle-xmark")[2];
         pass_icon.classList.remove("fa-circle-xmark");
         pass_icon.classList.add("fa-bars");
