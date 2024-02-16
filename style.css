@@ -132,6 +132,9 @@ body{
     display: none;
     margin-top: 65px;
 }
+.wrapper3.active{
+    display:block;
+  }
 .tittle3{
     width: 100%;
     text-align: center;
