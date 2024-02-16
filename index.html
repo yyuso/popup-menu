@@ -78,11 +78,11 @@
         }
   function hizlimenuu(){
     var div = document.getElementById("wrapper3");
-    if (div.style.display === "none") {
-      div.style.display = "block";
-    } else {
-      div.style.display = "none";
-    }
+    if (div.classList.contains("active")) {
+                div.classList.remove("active");
+            } else {
+                div.classList.add("active");
+            }
   }
  function main() {
     var div = document.getElementById("wrapper2");
